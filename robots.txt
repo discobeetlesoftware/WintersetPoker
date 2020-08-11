@@ -1,0 +1,7 @@
+User-agent: MSNBot
+Disallow:/
+
+User-agent: *
+Disallow: /mirror/
+Disallow: /storage/
+Disallow: /bb/

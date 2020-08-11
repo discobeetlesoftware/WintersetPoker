@@ -1,0 +1,108 @@
+	#divNav {
+		background: transparent url(bk-nav.jpg) no-repeat top left;
+		margin: 0;
+		padding: 0;
+		height: 80px;
+		width: 800px;
+	}
+
+	#nav {
+		position: relative;
+		top: 55px;
+		height: 80px;
+		width: 800px;
+	}
+
+	#nav li ul, #nav li ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	#nav a {
+		text-decoration: none;
+	}
+
+	#nav li { /*float the main list items*/
+		margin: 0;
+		float: left;
+		display: block;
+		padding-right: 15px;
+	}
+
+	#nav li ul {
+		display: none;
+	}
+
+	#nav li.off ul, #nav li.on ul  { /*put the subnav below*/
+		position: absolute;
+		top: 25px;
+		left: 0;
+		padding-top: 15px;
+		background: #003399;
+		height: 28px;
+		width: 740px;
+		padding-left: 60px;
+	}
+
+	#nav li.on ul {
+		background: #999999;
+	}
+
+	#nav li.on:hover ul, #nav li.over ul { /*for ie*/
+		background: #003399;
+	}
+
+	#nav li a {
+		color: #003399;
+		font-weight: bold;
+		display: block;
+		width: 93px;
+		padding: 0;
+	}
+
+	#nav li.on a {
+		color: #999999;
+	}
+
+	#nav li.on ul a, #nav li.off ul a {
+		border: 0;
+		float: left; /*ie doesn't inherit the float*/
+		color: #999999s;
+		width: auto;
+		margin-right: 15px;
+	}
+
+	#nav li.on:hover ul a, #nav li.over ul li a { /*for ie - the specificity is necessary*/
+		background: #003399;
+	}
+
+	#nav li.on ul {
+		display: block;
+	}
+
+
+
+	/*do the image replacement*/
+
+	#nav li span {
+		position: absolute;
+		left: -9384px;
+	}
+
+
+
+
+/*subnav formatting*/
+
+#nav li.off ul a, #nav li.on ul a {
+	display: block;
+	background: #003399;
+	color: #fff;
+	font-family: arial, verdana, sans-serif;
+	font-size: small;
+}		
+
+#nav li.on ul a {
+	background: #999999;
+}
+	
